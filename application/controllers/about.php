@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class About extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,9 +19,8 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$content = $this->load->view('pages/home', array(), true);
-		$headerContent = "<style>body { background: #f4f4f4 url(/img/bg-home.png) repeat-x; }</style>";
-		$this->load->view("layouts/main", array("content" => $content, "headerContent" => $headerContent));
+		$content = $this->load->view('pages/about', array(), true);
+		$this->load->view("layouts/main", array("content" => $content));
 	}
 }
 

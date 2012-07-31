@@ -1,0 +1,4 @@
+<?=$content;?>
+	</div>
+</body>
+</html>
